@@ -101,9 +101,12 @@ const handleRenderSaveBtn = function () {
   }
 };
 
-// Render's the list of note titles
+// Renders the list of note titles
 const renderNoteList = (notes) => {
   $noteList.empty();
+  // console.log(typeof(notes));
+  // console.log(notes[0].id);
+  // console.log("render");
 
   const noteListItems = [];
 

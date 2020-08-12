@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Routes
-require("./public/routes/apiRoutes")(app);
-require("./public/routes/htmlRoutes")(app);
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 // Start server - Listener
 app.listen(PORT, function() {
